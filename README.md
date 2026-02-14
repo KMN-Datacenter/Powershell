@@ -1,12 +1,11 @@
 # Powershell
-__This is a public repo and should contain scripts only. No passwords, keys, etc.__
 
-## Setup
-1. SetExecutionPolicy is required to run scripts locally.
+This is a __public__ repo and may be cloned to any Windows server to perform initial tasks and configuration.
 
-## Users
-GetLinux returns the Linux attributes for users 
-
+|Index|Filename      |Function                           |
+|-----|--------------|-----------------------------------|
+|1    |GetUID.ps1    |Get AD users with linux properties |
+|2    |NewUsers.ps1  |Create AD users from NewUsers.csv  |
 
 
  
