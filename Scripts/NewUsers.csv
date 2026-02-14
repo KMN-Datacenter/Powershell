@@ -1,0 +1,2 @@
+FirstName,LastName,Username,Department,Password,gidNumber,uidNumber, unixHomeDirectory
+Joe,Bloggs,joe.bloggs,PDResearch,Passw0rd,10000,10000,/home/joe.bloggs
