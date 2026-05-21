@@ -26,7 +26,7 @@ write-host "Opening" $CSVPath
 $ADUsers = Import-csv $CSVPath
 $ADUsers | Format-Table
 
-$RemoteComputer="dc1.janus.kmn.ie"
+$RemoteComputer="dc1-letterkenny.letterkenny.ads.kmn.ie"
 
 # Prompt to enter the username and password securely
 $Credential = Get-Credential
@@ -43,7 +43,7 @@ if ($RemoteSession) {
 }
 
 
-$OU = "OU=PowerUsers,OU=Users,OU=Janus,DC=janus,DC=kmn,DC=ie"
+$OU = "OU=PowerUsers,OU=Users,OU=,DC=letterkenny, DC=ads,DC=kmn,DC=ie"
 $UserGroup = "PowerUsers"
 
 foreach ($User in $ADUsers)
