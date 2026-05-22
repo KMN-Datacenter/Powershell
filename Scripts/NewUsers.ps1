@@ -1,4 +1,4 @@
-﻿#
+<#
 .SYNOPSIS
   <Create users in AD with Linux attributes>
 .DESCRIPTION
@@ -43,8 +43,8 @@ if ($RemoteSession) {
 }
 
 
-$OU = "OU=PowerUsers,OU=Users,OU=,DC=letterkenny, DC=ads,DC=kmn,DC=ie"
-$UserGroup = "PowerUsers"
+$OU = "OU=ATU Staff,OU=People,OU=Letterkenny,DC=letterkenny,DC=ads,DC=kmn,DC=ie"
+$UserGroup = "ATU Staff"
 
 foreach ($User in $ADUsers)
 {
@@ -66,7 +66,7 @@ foreach ($User in $ADUsers)
        {
             New-ADUser `
             -SamAccountName $Username `
-            -UserPrincipalName "$Username@janus.kmn.ie" `
+            -UserPrincipalName "$Username@letterkenny.ads.kmn.ie" `
             -Name "$Firstname $Lastname" `
             -GivenName $Firstname `
             -Surname $Lastname `
